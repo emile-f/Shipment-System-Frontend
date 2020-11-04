@@ -11,6 +11,11 @@ const NavBar = () => {
     if (!loggedIn.loggedIn) {
       history.push('/login');
     } else {
+      
+      /*
+        Its propbably a good practice to have a try/catch around a await because when the request fails this will throw an error that isn't being catched.
+        You can also use the fetch().then().catch()
+      */
       const response = await fetch('/auth/logout');
 
       if (response.status === 200) {
