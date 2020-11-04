@@ -5,6 +5,10 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
 
+/*
+ Cool project and good use of third party api and docker and the design looks good.
+ Some small changes that might make you code a little bit more structure is to move all your api calls to separate api file so you can reuse some functions
+*/
 ReactDOM.render(
   <React.StrictMode>
     <App />
